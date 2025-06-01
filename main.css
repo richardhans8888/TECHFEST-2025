@@ -516,7 +516,7 @@ h1, h2, .title {
 
 .mountain-section {
   width: 100%;
-  background-color: transparent; 
+  background-color: transparent; /* or same as page bg */
 }
 
 .mountain-image {
