@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
   font-family: 'Albertus';
   src: url('Assets/Fonts/Albertus.otf') format('opentype');
@@ -29,10 +30,8 @@ h1, h2, .title {
   
   body, html {
     font-family: 'Georgia', serif;
-    height: 100vh;
     background-color: #7da6c1;
     color: #f5a623;
-    overflow-y: scroll;
   }
   
 
@@ -82,12 +81,12 @@ h1, h2, .title {
   }
   
   .hero {
-    margin-top: 80px; 
-    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     position: relative;
     text-align: center;
-    padding: 2rem;
-    overflow: hidden;
   }
   
 
@@ -127,7 +126,7 @@ h1, h2, .title {
   }
   
   .gears-right {
-    right: -5%;
+    right: 0;
     top: 35%;
   }
   
@@ -141,7 +140,7 @@ h1, h2, .title {
     position: relative;
     z-index: 3;
     top: 25%;
-    transform: translateY(-25%);
+    transform: translateY(-150%);
     color: #f5a623;
   }
   
@@ -151,10 +150,10 @@ h1, h2, .title {
   }
   
   .title {
+    font-family:'Cinzel', serif;
     font-size: 4.5rem;
     font-weight: 700;
     letter-spacing: 0.15em;
-    margin: 10px 0;
   }
   
   .countdown {
@@ -514,62 +513,45 @@ h1, h2, .title {
   user-select: none;
 }
 
+/* MOUNTAIN SECTION */
+
 .mountain-section {
+  position:relative;
   width: 100%;
-  background-color: transparent; /* or same as page bg */
-}
-
-.mountain-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  user-select: none;
-  pointer-events: none;
-}
-
-
-
-
-
-.end-footer {
-  position: relative;
-  background-color: black; 
-  padding-top: 0;
-  padding-bottom: 4rem; 
-  overflow: visible;
-}
-
-
-.mountain-image {
-  display: block;
-  width: 100%;
-  height: auto;
-  pointer-events: none;
-  user-select: none;
-  margin-bottom: -200px; 
   z-index: 0;
+  overflow: visible;
 }
 
+.mountain-image{
+  margin-bottom: -900px;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: auto;
+}
+
+/* FOOTER SECTION */
+
 .end-footer {
-  position: relative;
-  background-color: (47, 47, 47, 0.8);
-  padding-top: 150px;
-  padding-bottom: 4rem;
-  overflow: visible;
-  z-index: 10;
+  position:relative;
+  bottom: -700px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color:rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 200px;
+  z-index: 5;
 }
 
 .end-footer-content {
-  position: relative;
-  max-width: 1500px;
-  margin: -150px auto 0 auto;
-  background-color: transparent;
-  padding: 2rem 3rem;
+  width: 90%;
   border-radius: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 20;
   box-shadow: none;
   height: auto;
   color: white;
@@ -577,31 +559,46 @@ h1, h2, .title {
 
 .end-footer-left {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .end-footer-logo {
-  height: 40px;
+  height: 100px;
 }
 
 .end-footer-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap:1rem;
+}
+
+.end-footer-buttons{
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  gap: 2rem
 }
 
 .end-university-logos img {
-  height: 50px;
-  margin-left: 1rem;
+  height: 70px;
+}
+
+.end-university-logos{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.end-footer-nav, .end-social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .end-footer-nav a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem;
   font-weight: 500;
-  font-size: 1rem;
 }
 
 .end-footer-nav a:hover {
@@ -610,7 +607,6 @@ h1, h2, .title {
 
 .end-social-icons a img {
   height: 30px;
-  margin-left: 1rem;
   filter: brightness(0) invert(1);
   transition: filter 0.3s;
 }
