@@ -1,0 +1,43 @@
+.description-container {
+  background-color: #D1B272;
+  padding: 10px;
+  opacity: 90%;
+  margin-bottom: 150px;
+}
+
+.description-text-color {
+  color: #6A3231;
+}
+
+.description-header {
+  font-size: 60px;
+}
+
+.description-body {
+  margin-top: 20px;
+}
+
+.container-body {
+  display: flex;
+}
+
+.container-text {
+  font-size: 2vw;
+}
+
+.container-flower {
+  margin-right: -10px;
+}
+
+.register {
+  padding: 5px 20px 5px 20px;
+  border-color: #6A3231;
+  background-color: #F7B536;
+  border-radius: 8px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.register:hover {
+  background-color: #ffd587;
+}
