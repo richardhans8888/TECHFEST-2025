@@ -1,0 +1,67 @@
+body {
+  overflow-x: hidden;
+}
+
+.find-project, .search-project-container {
+  text-align: center;
+}
+
+.find-project {
+  font-size: 50px;
+}
+
+.search-project {
+  width: 300px;
+  height: 40px;
+  border-radius: 7px;
+  border-style: none;
+  outline: none;
+  font-size: 20px;
+  padding: 0px 5px 0px 5px;
+  text-align: center;
+  background-color: #EFE8D9;
+  color: #6A3231;
+  margin-bottom: 100px;
+}
+
+.search-project::placeholder {
+  text-align: center;
+  font-size: 20px;
+}
+
+.search-project:focus::placeholder {
+  color: transparent;
+}
+
+.project-container {
+  display: flex;
+  background-color: #D1B272;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 20px 30px 20px 30px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-text {
+  color: #6A3231;
+}
+
+.project-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+.project-logo {
+  width: 180px;
+  margin-left: 30px;
+}
+
+.figma-logo {
+  margin-top: 100px;
+  width: 70px;
+  margin-bottom: 60px;
+}
