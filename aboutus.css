@@ -7,7 +7,7 @@
 @font-face {
   font-family: 'Cinzel';
   src: url(/Assets/Fonts/Cinzel-VariableFont_wght.ttf);
-  font-style: normal;
+  font-style: italic;
   font-weight: normal;
 }
 
@@ -15,7 +15,6 @@
   font-family: 'Cinzel-Deco';
   src: url(/Assets/Fonts/CinzelDecorative-Bold.ttf);
   font-size: 800;
-  font-style: italic;
 }
 
 *{
@@ -217,25 +216,7 @@ body{
 
 
 /* HERO START */
-.hero-section{
-    display: flex;
-    position: relative;
-    padding-top: 8rem;
-    padding-bottom: 40rem;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero-section h1{
-    position: absolute;
-    font-family: "Cinzel-Deco", sans-serif;
-    color: #F7B536;
-    text-shadow: 0 1px 5px black;
-    transform: translateY(12rem);
-    font-size: 80px;
-    font-weight: 800;
-}
-
+/* elemen start*/
 .gear{
     position: absolute;
     width: 20vw;
@@ -257,7 +238,6 @@ body{
     height: auto;
     top: 0%;
     left: 65%;
-    /* transform: translateX(50rem) translateY(-25%); */
 }
 
 .birdie{
@@ -272,7 +252,103 @@ body{
     width: 50vw;
     top: 55%;
 }
+/* elemen-stop */
+
+.hero-section{
+    display: flex;
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 40rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1{
+    position: absolute;
+    font-family: "Cinzel-Deco", sans-serif;
+    color: #F7B536;
+    text-shadow: 0 1px 5px black;
+    transform: translateY(12rem);
+    font-size: 80px;
+    font-weight: 800;
+}
 /* HERO END */
+
+/* ABOUT SECTION START */
+    /* elemen start*/
+    .left-gear{
+        position: absolute;
+        width: 40vw;
+        left: -15%;
+        bottom: 42%
+    }
+
+    .right-gear{
+        position: absolute;
+        width: 40vw;
+        right: -15%;
+        top: 50%;
+    }
+
+    .airship{
+        position: absolute;
+        left: -10%;
+        top: 85%;
+    }
+    /* elemen stop*/
+
+
+    .about-section{
+        position: relative;
+        padding: 2rem 20rem 20rem 20rem;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container h3{
+        font-family: "Cinzel", sans-serif;
+        font-weight: 100;
+        font-size: 28px;
+        color: #6A3231;
+    }
+
+    .container p{
+        font-family: "Glyphic", sans-serif;
+        font-weight: 100;
+        font-size: 15px;
+        color: #6A3231;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        background-color: #C7B079;
+        padding: 2rem;
+        padding-bottom: 5rem;
+        border-radius: 20px;
+        justify-content: center;
+        box-shadow: 2px 5px 10px black;
+    }
+
+    .container1{
+        transform: translateX(-8rem);
+        justify-content: flex-start;
+        padding-right: 10rem;
+        text-align: left;
+    }
+
+    .container2{
+        transform: translateX(8rem);
+        justify-content: flex-end;
+        padding-left: 10rem;
+        text-align: right;
+    }
+    
+/* ABOUT SECTION END */
 
 @media (max-width: 768px) {
     /* NAVBAR START*/
@@ -382,5 +458,52 @@ body{
     }
     /* HERO END */
 
-    
+    /* ABOUT START */
+    /* elemen start*/
+        .left-gear{
+            width: 80vw;
+            bottom: 65%;
+            left: -25%;
+        }
+
+        .right-gear{
+            width: 80vw;
+            top: 40%;
+            right: -20%;
+        }
+
+        .airship{
+            left: -40%;
+            top: 65%;
+        }
+    /* elemen stop*/
+    .about-section{
+        padding: 2rem 3.5rem;
+    }
+
+    .container{
+        padding: 1.5rem;
+        gap: 0.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .container h3{
+        font-size: 22px;
+    }
+
+    .container p{
+        font-size: 12px;
+    }
+
+    .container1{
+        transform: translateX(0);
+        padding-right: 6rem;
+    }
+
+    .container2{
+        transform: translateX(0);
+        padding-left: 6rem;
+    }
+    /* ABOUT END */
+
 }
