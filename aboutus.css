@@ -14,7 +14,7 @@
 @font-face {
   font-family: 'Cinzel-Deco';
   src: url(/Assets/Fonts/CinzelDecorative-Bold.ttf);
-  font-size: 800;
+  font-weight: 800;
 }
 
 *{
@@ -78,6 +78,7 @@ body{
     gap: 3rem;
     border-radius: 20px;
     left: 50%;
+    transform: translateX(-50%);
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 
 }
@@ -139,7 +140,7 @@ body{
 
 .bigfoot{
     position: relative;
-
+    overflow-x: hidden;
 }
 
 .footer{
@@ -277,6 +278,7 @@ body{
 .bighero{
     position: relative;
     padding-top: 8rem;
+    overflow-x: hidden;
 }
 
 .hero-section{
@@ -315,19 +317,16 @@ body{
         right: -15%;
         top: 50%;
     }
-
-    .airship{
-        width: 35vw;
-        position: absolute;
-        left: -10%;
-        top: 85%;
-    }
     /* elemen stop*/
 
     .bigabout{
         position: relative;
         display: flex;
         justify-content: center;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        min-height: 120vh
+        /* padding-bottom: 30rem; */
     }
 
     .about-section{
@@ -335,7 +334,7 @@ body{
         max-width: 1200px;
         overflow-y: hidden;
         position: relative;
-        padding: 2rem 10rem 15rem 10rem;
+        padding: 2rem 10rem 10rem 10rem;
         gap: 2rem;
         display: flex;
         flex-direction: column;
@@ -389,6 +388,19 @@ body{
 /* ABOUT SECTION END */
 
 /* SPONSOR MEDIA START */
+    /* elemen start*/
+    .airship{
+        width: 35vw;
+        position: absolute;
+        left: -10%;
+        top: -10%;
+    }
+    /* elemen stop*/
+
+    .bigsponsor{
+        position: relative;
+    }
+
     .sponsor-media{
         display: flex;
         flex-direction: column;
@@ -553,11 +565,7 @@ body{
             right: -20%;
         }
 
-        .airship{
-            left: -30%;
-            width: 70vw;
-            top: 65%;
-        }
+        
     /* elemen stop*/
     .about-section{
         padding: 2rem 3.5rem;
@@ -590,6 +598,15 @@ body{
     /* ABOUT END */
 
     /* SPONSOR MEDIA START */
+    /* elemen start */
+    .airship{
+            left: -30%;
+            width: 70vw;
+            top: -75%;
+            z-index: -1;
+    }
+    /* elemen ends */
+
     .sponsor-media{
         padding: 3rem 3rem;
     }
