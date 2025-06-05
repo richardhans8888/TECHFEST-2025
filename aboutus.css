@@ -53,8 +53,8 @@ body{
     border: none;
     cursor: pointer;
     align-items: center;
-    width: 20vw;
-    height: 7vw;
+    width: 20%;
+    height: 6vw;
     transition: 0.2s ease-in-out;
 }
 
@@ -331,6 +331,8 @@ body{
     }
 
     .about-section{
+        width: 100%;
+        max-width: 1200px;
         overflow-y: hidden;
         position: relative;
         padding: 2rem 10rem 15rem 10rem;
