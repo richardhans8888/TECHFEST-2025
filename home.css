@@ -21,12 +21,10 @@
 
 body{
     background-color: #6B9FB5;
-    overflow: hidden;
 }
 
 /* NAVBAR START */
 .navbar {
-    z-index: 100;
     background-color: rgba(139, 181, 199, 0.7);
     display: flex;
     justify-content: space-between;
@@ -34,11 +32,6 @@ body{
     padding: 1rem 5rem;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    backdrop-filter: blur(2px);
 }
 
 .nav-icon{
@@ -205,6 +198,8 @@ body{
     transition: 0.2s ease-in;
     transform: scale(1.1);
 }
+
+
 
 @media (max-width: 768px) {
     /* NAVBAR START*/

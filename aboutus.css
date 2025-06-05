@@ -4,12 +4,18 @@
     src: url(/Assets/Fonts/FacultyGlyphic-Regular.ttf);
 }
 
-
 @font-face {
   font-family: 'Cinzel';
   src: url(/Assets/Fonts/Cinzel-VariableFont_wght.ttf);
   font-style: normal;
   font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Cinzel-Deco';
+  src: url(/Assets/Fonts/CinzelDecorative-Bold.ttf);
+  font-size: 800;
+  font-style: italic;
 }
 
 *{
@@ -21,7 +27,7 @@
 
 body{
     background-color: #6B9FB5;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* NAVBAR START */
@@ -84,6 +90,7 @@ body{
     font-size: 18px;
     transition: 0.3s ease-in-out;
     transform: translateY(0.5rem);
+    z-index: 100;
 }
 
 .navbar a:hover{
@@ -205,6 +212,64 @@ body{
     transition: 0.2s ease-in;
     transform: scale(1.1);
 }
+
+/* HERO START */
+.hero-section{
+    display: flex;
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 40rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-section h1{
+    position: absolute;
+    font-family: "Cinzel-Deco", sans-serif;
+    color: #F7B536;
+    text-shadow: 0 1px 5px black;
+    transform: translateY(12rem);
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.gear{
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    left: 0%;
+    transform: translateY(-2.5rem);
+}
+
+.left-cloud{
+    position: absolute;
+    width: 50vw;
+    left: -15%;
+    top: 45%;
+}
+
+.right-cloud{
+    position: absolute;
+    width: 50vw;
+    height: auto;
+    top: 0%;
+    left: 65%;
+    /* transform: translateX(50rem) translateY(-25%); */
+}
+
+.birdie{
+    position: absolute;
+    height: 40vw;
+    right: -5%;
+    top: 50%;
+}
+
+.left-cloud{
+    position: absolute;
+    width: 50vw;
+    top: 55%;
+}
+/* HERO END */
 
 @media (max-width: 768px) {
     /* NAVBAR START*/
