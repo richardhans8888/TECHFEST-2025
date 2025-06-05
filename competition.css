@@ -1,22 +1,15 @@
-.competition-section {
-  transform: translateY(12rem);
-}
-
 .hero-section p{
-    position: absolute;
     font-family: 'Glyphic', sans-serif;
     color: #F7B536;
     text-shadow: 0 1px 5px black;
-    transform: translateY(8rem);
     font-size: 30px;
     font-weight: 400;
 }
 
 .hero-section button {
-    position: absolute;
+    position: relative;
     font-family: 'Glyphic', sans-serif;
     font-size: 20px;
-    transform: translateY(20rem);
     padding: 10px 30px;
     background: linear-gradient(to right, #B98D50, #8D435A);
     border-radius: 20px;

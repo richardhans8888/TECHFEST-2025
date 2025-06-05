@@ -1,15 +1,9 @@
 .hero-section p{
-    position: absolute;
     font-family: 'Glyphic', sans-serif;
     color: #F7B536;
     text-shadow: 0 1px 5px black;
-    transform: translateY(8rem);
     font-size: 30px;
     font-weight: 400;
-}
-
-.project-section{
-  transform: translateY(12rem);
 }
 
 .find-project, .search-project-container {

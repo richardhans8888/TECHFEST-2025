@@ -114,6 +114,7 @@
 }
 
 .submit-btn {
+    display: block;
     width: 50%;
     padding: 12px;
     background: #BF8D68;;

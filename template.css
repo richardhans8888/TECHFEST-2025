@@ -240,20 +240,22 @@ body{
 /* HERO START */
 .hero-section{
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
     position: relative;
-    padding-top: 8rem;
-    padding-bottom: 40rem;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
     justify-content: center;
     text-align: center;
     overflow-x: hidden;
 }
 
 .hero-section h1{
-    position: absolute;
     font-family: "Cinzel-Deco", sans-serif;
     color: #F7B536;
     text-shadow: 0 1px 5px black;
-    transform: translateY(12rem);
     font-size: 80px;
     font-weight: 800;
 }
