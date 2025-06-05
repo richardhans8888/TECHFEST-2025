@@ -36,6 +36,7 @@
   padding: 10px;
   opacity: 90%;
   margin-bottom: 150px;
+  position: relative;
 }
 
 .description-text-color {
@@ -47,7 +48,8 @@
 }
 
 .description-body {
-  margin-top: 20px;
+  margin: 20px 0px 20px 0px;
+  min-height: 380px;
 }
 
 .container-body {
@@ -56,8 +58,11 @@
 
 .container-text {
   font-size: 25px;
+  margin-right: 300px;
 }
 
-.container-flower {
-  margin-right: -10px;
+.competition-flower {
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
