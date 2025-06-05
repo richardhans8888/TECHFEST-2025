@@ -3,138 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css" />
+    <title>Register</title>
+    <link rel="stylesheet" href="template.css" />
     <link rel="stylesheet" href="register.css" />
     <title>Register</title>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="Assets/Pics/LogoTechfest.png" alt="TechFest Logo" />
-            
+    <!-- navbar -->
+    <div class="navbar">
+        <a class="nav-icon" href="/home.html"></a>
+        <a class="nav-link" href="/techtalk.html">TechTalk</a>
+        <a class="nav-link" href="/competition.html">Competition</a>
+        <a class="nav-link" href="/showcase.html">Showcase</a>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">TechTalk</a></li>
-                <li><a href="#">Competition</a></li>
-                <li><a href="#">Showcase</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <img src="Assets/Pics/Cloud 2.png" alt="Clouds Left" class="cloud cloud-left" />
-        <img src="Assets/Pics/Cloud 1.png" alt="Clouds Right" class="cloud cloud-right" />
-
-        <div class="gears-left">
-            <img src="Assets/Pics/Gear 1.png" alt="Gears Left" />
+        <div id="nav-menu" class="nav-menu">
+            <a class="nav-link" href="/techtalk.html">TechTalk</a>
+            <a class="nav-link" href="/competition.html">Competition</a>
+            <a class="nav-link" href="/showcase.html">Showcase</a>
         </div>
+    </div>
 
-        <div class="gears-right">
-            <img src="Assets/Pics/Gear2.png" alt="Gears Right" />
+        <!-- HERO, pake semua kecuali home page -->
+     <div class="bighero">
+        <!-- elemen -->
+        <img class="gear" src="/Assets/Pics/Gear 1.png" alt="">
+        <img class="right-cloud" src="/Assets/Pics/right-cloud.svg" alt="">            
+        <img class="left-cloud" src="/Assets/Pics/left-cloud.svg" alt="">
+        <img class="birdie" src="/Assets/Pics/birdie.svg" alt="">
+        <div class="hero-section">
+            <!-- judul -->
+            <h1>Competition <br> Registration</h1>
         </div>
+     </div>
 
-        <div class="registration-hero-content">
-            <h1 class="title">COMPETITION</h1>
-            <h1 class="title">Registration</h1>
-            <div class="form-container">
-                <div class="toggle-buttons">
-                    <button class="toggle-btn active" id="binusian-btn">Binusian</button>
-                    <button class="toggle-btn" id="non-binusian-btn">Non-Binusian</button>
+        <div class="form-container">
+            <div class="toggle-buttons">
+                <button class="toggle-btn active" id="binusian-btn">Binusian</button>
+                <button class="toggle-btn" id="non-binusian-btn">Non-Binusian</button>
+            </div>
+
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
                 </div>
 
-                <form id="registration-form">
-                    <div class="form-group">
-                        <label for="nama">Nama Lengkap</label>
-                        <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="nim">Nomor Induk Mahasiswa (NIM)</label>
-                        <input type="text" id="nim" name="nim" placeholder="NIM" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="idline">ID Line</label>
-                        <input type="text" id="idline" name="idline" placeholder="ID Line" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="instansi">Instansi</label>
-                        <input type="text" id="instansi" name="instansi" placeholder="Instansi" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="jurusan">Jurusan</label>
-                        <input type="text" id="jurusan" name="jurusan" placeholder="Jurusan" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="region">Region Binus</label>
-                        <select id="region" name="region" required>
-                            <option value="">Pilih Region</option>
-                            <option value="Kemanggisan" selected>Kemanggisan</option>
-                            <option value="Alam Sutera">Alam Sutera</option>
-                            <option value="Senayan" selected>Senayan</option>
-                            <option value="Bekasi">Bekasi</option>
-                            <option value="Bandung">Bandung</option>
-                            <option value="Malang">Malang</option>
-                            <option value="Semarang">Semarang</option>
-                        </select>
-                    </div>
-
-                    <div class="radio-group">
-                        <div class="radio-option">
-                            <input type="radio" id="online" name="attendance" value="online" checked>
-                            <label for="online">Online</label>
-                        </div>
-                        <div class="radio-option">
-                            <input type="radio" id="onsite" name="attendance" value="onsite">
-                            <label for="onsite">Onsite</label>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="submit-btn">Submit</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <section class="mountain-section">
-        <img src="Assets/Pics/9f5153e3-ff5d-4b11-9e34-127cc8a92fa4.png" alt="Mountains" class="mountain-image" />
-    </section>
-    <footer class="end-footer">
-        <div class="end-footer-content">
-            <div class="end-footer-left">
-            <img src="Assets/Pics/LogoTechfest.png" alt="TechFest Logo" class="end-footer-logo" />
-            <p>© 2025 TECHFEST - HIMTI BINUS</p>
-            </div>
-
-            <div class="end-footer-right">
-            <div class="end-university-logos">
-                <img src="Assets/Pics/BINUS University White 1 1.png" alt="Binus University Logo 1" />
-                <img src="Assets/Pics/logo himti 1.png" alt="Binus University Logo 2" />
-            </div>
-
-            <div class="end-footer-buttons">
-                <div class="end-footer-nav">
-                <a href="#">FAQ</a>
-                <a href="#">ABOUT</a>
+                <div class="form-group">
+                    <label for="nim">Nomor Induk Mahasiswa (NIM)</label>
+                    <input type="text" id="nim" name="nim" placeholder="NIM" required>
                 </div>
-                <div class="end-social-icons">
-                <a href="#"><img src="Assets/Pics/Gmail Logo.png" alt="Gmail Icon" /></a>
-                <a href="#"><img src="Assets/Pics/LINE.png" alt="Line Icon" /></a>
-                <a href="#"><img src="Assets/Pics/Instagram.png" alt="Instagram Icon" /></a>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="idline">ID Line</label>
+                    <input type="text" id="idline" name="idline" placeholder="ID Line" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="instansi">Instansi</label>
+                    <input type="text" id="instansi" name="instansi" placeholder="Instansi" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="jurusan">Jurusan</label>
+                    <input type="text" id="jurusan" name="jurusan" placeholder="Jurusan" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="region">Region Binus</label>
+                    <select id="region" name="region" required>
+                        <option value="">Pilih Region</option>
+                        <option value="Kemanggisan" selected>Kemanggisan</option>
+                        <option value="Alam Sutera">Alam Sutera</option>
+                        <option value="Senayan" selected>Senayan</option>
+                        <option value="Bekasi">Bekasi</option>
+                        <option value="Bandung">Bandung</option>
+                        <option value="Malang">Malang</option>
+                        <option value="Semarang">Semarang</option>
+                    </select>
+                </div>
+
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="online" name="attendance" value="online" checked>
+                        <label for="online">Online</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="onsite" name="attendance" value="onsite">
+                        <label for="onsite">Onsite</label>
+                    </div>
+            </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+    <!-- footer -->
+    <div class="bigfoot">
+        <img class="mountain" src="/Assets/Pics/mountain1.svg" alt="">
+        <div class="footer">
+            <div class="footer-left">
+                <img src="/Assets/Pics/LogoTechfest.png" alt="">
+                <h3>@2025 TECHFEST - HIMTI BINUS</h3>
+            </div>
+            <div class="footer-right">
+                <div class="top-footer">
+                    <img class="binus-icon" src="/Assets/Pics/BINUS University White 1 1.svg" alt="">
+                    <img class="himti-icon" src="/Assets/Pics/logo himti 1.svg" alt="">
+                </div>
+                <div class="bottom-footer">
+                    <div class="footer-link">
+                        <a href="/faq.html">FAQ</a>
+                        <a href="/aboutus.html">ABOUT</a>
+                    </div>
+                    <div class="footer-icon">
+                        <a class="media-icon" target="_blank" href=""><img src="/Assets/Pics/LINE.svg" alt=""></a>
+                        <a class="media-icon" target="_blank" href="https://www.instagram.com/techfest.himti?igsh=cGtxb2dhbzF4ZDBv"><img src="/Assets/Pics/Instagram.svg" alt=""></a>
+                    </div>
+                    
                 </div>
             </div>
-            </div>
         </div>
-    </footer>
+    </div>
+
     <script>
         const binusianBtn = document.getElementById('binusian-btn');
         const nonBinusianBtn = document.getElementById('non-binusian-btn');
@@ -177,5 +176,7 @@
             });
         });
     </script>
+
+    <script src="/script.js"></script>
 </body>
 </html>

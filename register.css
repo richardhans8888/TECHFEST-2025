@@ -124,11 +124,10 @@
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 10px;
+    margin: auto;
 }
 
 .submit-btn:hover {
-    background: #b8941f;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }

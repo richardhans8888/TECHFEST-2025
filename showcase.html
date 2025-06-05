@@ -4,168 +4,153 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>TechFest Top Section</title>
-<link rel="stylesheet" href="main.css" />
+<link rel="stylesheet" href="template.css" />
 <link rel="stylesheet" href="showcase.css" />
 </head>
 <body>
 
-<header>
-  <div class="logo">
-    <img src="Assets/Pics/LogoTechfest.png" alt="TechFest Logo" />
-    
-  </div>
-  <nav>
-    <ul>
-      <li><a href="TechTalk/TechTalk.html">TechTalk</a></li>
-      <li><a href="competition.html">Competition</a></li>
-      <li><a href="showcase.html">Showcase</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- navbar -->
+    <div class="navbar">
+        <a class="nav-icon" href="/home.html"></a>
+        <a class="nav-link" href="/techtalk.html">TechTalk</a>
+        <a class="nav-link" href="/competition.html">Competition</a>
+        <a class="nav-link" href="/showcase.html">Showcase</a>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div id="nav-menu" class="nav-menu">
+            <a class="nav-link" href="/techtalk.html">TechTalk</a>
+            <a class="nav-link" href="/competition.html">Competition</a>
+            <a class="nav-link" href="/showcase.html">Showcase</a>
+        </div>
+    </div>
 
-<section class="hero">
-  <img src="Assets/Pics/Cloud 2.png" alt="Clouds Left" class="cloud cloud-left" />
-  <img src="Assets/Pics/Cloud 1.png" alt="Clouds Right" class="cloud cloud-right" />
+            <!-- HERO, pake semua kecuali home page -->
+     <div class="bighero">
+        <!-- elemen -->
+        <img class="gear" src="/Assets/Pics/Gear 1.png" alt="">
+        <img class="right-cloud" src="/Assets/Pics/right-cloud.svg" alt="">            
+        <img class="left-cloud" src="/Assets/Pics/left-cloud.svg" alt="">
+        <img class="birdie" src="/Assets/Pics/birdie.svg" alt="">
+        <div class="hero-section">
+            <!-- judul -->
+            <p>Welcome to</p>
+            <h1>Showcase</h1>
+        </div>
+     </div>
 
-  <div class="gears-left">
-    <img src="Assets/Pics/Gear 1.png" alt="Gears Left" />
-  </div>
-
-  <div class="gears-right">
-    <img src="Assets/Pics/Gear2.png" alt="Gears Right" />
-  </div>
-
-  <div class="hero-content">
-    <p class="date">Welcome to</p>
-    <h1 class="title">SHOWCASE</h1>
-  </div>
-</section>
-
-<h2 class="find-project">
-  FIND PROJECT
-</h2>
-<div class="search-project-container">
-  <input type="text" placeholder="INPUT PROJECT NAME" class="search-project">
-</div>
-
-
-<section>
-  <div class="project-container">
-    <div class="project-text">
-      <p class="project-title">NAMA PROJECT</p>
-      <p clas="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <div class="project-figma-img">
-        <img src="Assets/Pics/FigmaLogo.svg" class="figma-logo">
+    <div class="project-section">
+      <h2 class="find-project">
+        FIND PROJECT
+      </h2>
+      <div class="search-project-container">
+        <input type="text" placeholder="INPUT PROJECT NAME" class="search-project">
       </div>
-    </div>
-    <div class="project-img">
-      <img src="Assets/Pics/ProjectLogo.svg" class="project-logo">
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="project-container">
-    <div class="project-text">
-      <p class="project-title">NAMA PROJECT</p>
-      <p clas="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <div class="project-figma-img">
-        <img src="Assets/Pics/FigmaLogo.svg" class="figma-logo">
-      </div>
-    </div>
-    <div class="project-img">
-      <img src="Assets/Pics/ProjectLogo.svg" class="project-logo">
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="project-container">
-    <div class="project-text">
-      <p class="project-title">NAMA PROJECT</p>
-      <p clas="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <div class="project-figma-img">
-        <img src="Assets/Pics/FigmaLogo.svg" class="figma-logo">
-      </div>
-    </div>
-    <div class="project-img">
-      <img src="Assets/Pics/ProjectLogo.svg" class="project-logo">
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="project-container">
-    <div class="project-text">
-      <p class="project-title">NAMA PROJECT</p>
-      <p clas="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <div class="project-figma-img">
-        <img src="Assets/Pics/FigmaLogo.svg" class="figma-logo">
-      </div>
-    </div>
-    <div class="project-img">
-      <img src="Assets/Pics/ProjectLogo.svg" class="project-logo">
-    </div>
-  </div>
-</section>
-
-<section class="sponsor-media-section">
-  <h2 class="section-title sponsor-title">SPONSOR</h2>
-  <div class="sponsor-box">
-    ini sponsor
-  </div>
-
-  <h2 class="section-title media-title">MEDIA PARTNER</h2>
-  <div class="media-partner-box">
-    ini medpar
-  </div>
-
-  <!-- Big flowers on sides -->
-  <div class="floral-left">
-    <img src="Assets/Pics/SponsorMedFlower.png" alt="Big Floral Left" />
-  </div>
-  <div class="floral-right">
-    <img src="Assets/Pics/SponsorMedFlower2.png" alt="Big Floral Right" />
-  </div>
-
-  <!-- Small flowers near Media Partner -->
-  <div class="floral-small-left">
-    <img src="Assets/Pics/MediaSmallFlower.png" alt="Small Floral Left" />
-  </div>
-  <div class="floral-small-right">
-    <img src="Assets/Pics/MediaSmallFlowers2.png" alt="Small Floral Right" />
-  </div>
-</section>
 
 
-<section class="mountain-section">
-  <img src="Assets/Pics/9f5153e3-ff5d-4b11-9e34-127cc8a92fa4.png" alt="Mountains" class="mountain-image" />
-</section>
+      <section>
+        <div class="project-container">
+          <div class="project-text">
+            <p class="project-title">NAMA PROJECT</p>
+            <p clas="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="project-figma-img">
+              <img src="Assets/Pics/FigmaLogo.svg" class="figma-logo">
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="Assets/Pics/ProjectLogo.svg" class="project-logo">
+          </div>
+        </div>
+      </section>
 
-<footer class="end-footer">
-  <div class="end-footer-content">
-    <div class="end-footer-left">
-      <img src="Assets/Pics/LogoTechfest.png" alt="TechFest Logo" class="end-footer-logo" />
-      <p>© 2025 TECHFEST - HIMTI BINUS</p>
+      <section>
+        <div class="project-container">
+          <div class="project-text">
+            <p class="project-title">NAMA PROJECT</p>
+            <p clas="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="project-figma-img">
+              <img src="Assets/Pics/FigmaLogo.svg" class="figma-logo">
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="Assets/Pics/ProjectLogo.svg" class="project-logo">
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="project-container">
+          <div class="project-text">
+            <p class="project-title">NAMA PROJECT</p>
+            <p clas="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="project-figma-img">
+              <img src="Assets/Pics/FigmaLogo.svg" class="figma-logo">
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="Assets/Pics/ProjectLogo.svg" class="project-logo">
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="project-container">
+          <div class="project-text">
+            <p class="project-title">NAMA PROJECT</p>
+            <p clas="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="project-figma-img">
+              <img src="Assets/Pics/FigmaLogo.svg" class="figma-logo">
+            </div>
+          </div>
+          <div class="project-img">
+            <img src="Assets/Pics/ProjectLogo.svg" class="project-logo">
+          </div>
+        </div>
+      </section>
     </div>
 
-    <div class="end-footer-right">
-      <div class="end-university-logos">
-        <img src="Assets/Pics/BINUS University White 1 1.png" alt="Binus University Logo 1" />
-        <img src="Assets/Pics/logo himti 1.png" alt="Binus University Logo 2" />
-      </div>
-      <nav class="end-footer-nav">
-        <a href="#">FAQ</a>
-        <a href="#">ABOUT</a>
-      </nav>
-      <div class="end-social-icons">
-        <a href="#"><img src="Assets/Pics/Gmail Logo.png" alt="Gmail Icon" /></a>
-        <a href="#"><img src="Assets/Pics/LINE.png" alt="Line Icon" /></a>
-        <a href="#"><img src="Assets/Pics/Instagram.png" alt="Instagram Icon" /></a>
-      </div>
+     <!-- sponsor & media partner -->
+     <div class="sponsor-media">
+        <div class="sponsormedia-container">
+            <h1>SPONSOR</h1>
+            <img class="sponsor-img" src="" alt="ini sponsor">
+        </div>
+        <div class="sponsormedia-container">
+            <h1>MEDIA PARTNER</h1>
+            <img class="media-img" src="" alt="ini media partner">
+        </div>
+     </div>
+
+
+    <!-- footer -->
+    <div class="bigfoot">
+        <img class="mountain" src="/Assets/Pics/mountain1.svg" alt="">
+        <div class="footer">
+            <div class="footer-left">
+                <img src="/Assets/Pics/LogoTechfest.png" alt="">
+                <h3>@2025 TECHFEST - HIMTI BINUS</h3>
+            </div>
+            <div class="footer-right">
+                <div class="top-footer">
+                    <img class="binus-icon" src="/Assets/Pics/BINUS University White 1 1.svg" alt="">
+                    <img class="himti-icon" src="/Assets/Pics/logo himti 1.svg" alt="">
+                </div>
+                <div class="bottom-footer">
+                    <div class="footer-link">
+                        <a href="/faq.html">FAQ</a>
+                        <a href="/aboutus.html">ABOUT</a>
+                    </div>
+                    <div class="footer-icon">
+                        <a class="media-icon" target="_blank" href=""><img src="/Assets/Pics/LINE.svg" alt=""></a>
+                        <a class="media-icon" target="_blank" href="https://www.instagram.com/techfest.himti?igsh=cGtxb2dhbzF4ZDBv"><img src="/Assets/Pics/Instagram.svg" alt=""></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</footer>
 
 </body>
 </html>

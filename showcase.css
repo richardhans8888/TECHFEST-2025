@@ -1,5 +1,15 @@
-body {
-  overflow-x: hidden;
+.hero-section p{
+    position: absolute;
+    font-family: 'Glyphic', sans-serif;
+    color: #F7B536;
+    text-shadow: 0 1px 5px black;
+    transform: translateY(8rem);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.project-section{
+  transform: translateY(12rem);
 }
 
 .find-project, .search-project-container {
@@ -7,6 +17,8 @@ body {
 }
 
 .find-project {
+  font-family: "Cinzel-Deco";
+  color: #F7B536;
   font-size: 50px;
 }
 
@@ -27,6 +39,8 @@ body {
 .search-project::placeholder {
   text-align: center;
   font-size: 20px;
+  font-family: "Cinzel", sans-serif;
+  color: #6A3231;
 }
 
 .search-project:focus::placeholder {
@@ -36,7 +50,8 @@ body {
 .project-container {
   display: flex;
   background-color: #D1B272;
-  width: 800px;
+  width: 90%;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
@@ -47,13 +62,14 @@ body {
 
 .project-text {
   color: #6A3231;
+  font-family: 'Glyphic', sans-serif;
 }
 
 .project-title {
   font-size: 30px;
   margin-bottom: 20px;
+  font-family: "Cinzel-Deco";
 }
-
 
 .project-logo {
   width: 180px;

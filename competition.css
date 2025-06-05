@@ -1,3 +1,43 @@
+.competition-section {
+  transform: translateY(12rem);
+}
+
+.hero-section p{
+    position: absolute;
+    font-family: 'Glyphic', sans-serif;
+    color: #F7B536;
+    text-shadow: 0 1px 5px black;
+    transform: translateY(8rem);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hero-section button {
+    position: absolute;
+    font-family: 'Glyphic', sans-serif;
+    font-size: 20px;
+    transform: translateY(20rem);
+    padding: 10px 30px;
+    background: linear-gradient(to right, #B98D50, #8D435A);
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.hero-section button::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: #F7B536; /* Inner background */
+    border-radius: 18px; /* Slightly smaller to match curve */
+    z-index: -1;
+}
+
 .description-container {
   background-color: #D1B272;
   padding: 10px;
@@ -27,17 +67,4 @@
 
 .container-flower {
   margin-right: -10px;
-}
-
-.register {
-  padding: 5px 20px 5px 20px;
-  border-color: #6A3231;
-  background-color: #F7B536;
-  border-radius: 8px;
-  border-style: solid;
-  cursor: pointer;
-}
-
-.register:hover {
-  background-color: #ffd587;
 }
