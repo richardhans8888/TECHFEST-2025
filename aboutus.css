@@ -196,7 +196,6 @@ body{
     gap: 1.5rem;
     margin-right: 1rem;
 }
-/* FOOTER END */
 
 .bottom-footer img{
     width: 50px;
@@ -212,6 +211,10 @@ body{
     transition: 0.2s ease-in;
     transform: scale(1.1);
 }
+
+/* FOOTER END */
+
+
 
 /* HERO START */
 .hero-section{
@@ -349,4 +352,35 @@ body{
         
     }
     /* FOOTER END */
+
+    /* HERO START */
+    .hero-section h1{
+        font-size: 50px;
+        top: 10%;
+    }
+
+    .gear{
+        width: 35vw;
+        top: 10%;
+    }
+
+    .left-cloud{
+        width: 90vw;
+        left: -30%;
+        top: 40%;
+    }
+
+    .right-cloud{
+        width: 90vw;
+        left: 55%;
+        top: 10%;
+    }
+
+    .birdie{
+        height: 60vw;
+        top: 45%;
+    }
+    /* HERO END */
+
+    
 }
