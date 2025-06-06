@@ -252,6 +252,30 @@ body{
     overflow-x: hidden;
 }
 
+@keyframes floatLeft {
+    0% {
+        transform: translateX(-15%);
+    }
+    50% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(-15%);
+    }
+}
+
+@keyframes floatRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .hero-section h1{
     font-family: "Cinzel-Deco", sans-serif;
     color: #F7B536;
@@ -273,6 +297,7 @@ body{
     width: 50vw;
     left: -15%;
     top: 45%;
+    animation: floatLeft 8s ease-in-out infinite;
 }
 
 .right-cloud{
@@ -281,7 +306,7 @@ body{
     height: auto;
     top: 0%;
     left: 65%;
-    /* transform: translateX(50rem) translateY(-25%); */
+    animation: floatRight 10s ease-in-out infinite;
 }
 
 .birdie{
