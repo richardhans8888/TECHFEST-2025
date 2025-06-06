@@ -292,6 +292,51 @@ body{
     transform: translateY(-2.5rem);
 }
 
+.spinning-cogs {
+    position: relative;
+    top: -30px;
+    left: -200px;
+}
+
+.large-cog {
+    position: absolute;
+    left: 210px;
+    top: 100px;
+    animation: large-cog-spin 20s linear infinite;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+}
+
+.small-cog {
+    animation: small-cog-spin 10s linear infinite;
+    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+    position: absolute;
+}
+
+.small-cog-1 {
+    left: 50px;
+}
+
+.small-cog-2 {
+    top: 195px;
+    left: -10px;
+}
+
+.small-cog-3 {
+    top: 400px;
+    left: 110px;
+}
+
+@keyframes large-cog-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes small-cog-spin {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
 .left-cloud{
     position: absolute;
     width: 50vw;
