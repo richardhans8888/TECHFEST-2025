@@ -45,6 +45,7 @@ body{
     left: 0;
     width: 100%;
     backdrop-filter: blur(2px);
+    user-select: none;
 }
 
 .nav-icon{
@@ -250,6 +251,7 @@ body{
     justify-content: center;
     text-align: center;
     overflow-x: hidden;
+    user-select: none;
 }
 
 @keyframes floatLeft {
@@ -276,8 +278,20 @@ body{
     }
 }
 
+@keyframes floatBird {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .hero-section h1{
-    font-family: "Cinzel-Deco", sans-serif;
+    font-family: "Cinzel-Deco";
     color: #F7B536;
     text-shadow: 0 1px 5px black;
     font-size: 80px;
@@ -293,6 +307,7 @@ body{
 }
 
 .spinning-cogs {
+    opacity: 0.7;
     position: relative;
     top: -30px;
     left: -200px;
@@ -355,10 +370,12 @@ body{
 }
 
 .birdie{
+    opacity: 0.8;
     position: absolute;
     height: 40vw;
     right: -5%;
     top: 50%;
+    animation: floatBird 4s ease-in-out infinite;
 }
 
 .left-cloud{
@@ -437,6 +454,11 @@ body{
         
     }
 
+    .spinning-cogs {
+        transform:scale(0.4);
+        top: 50px;
+    }
+
     
     @keyframes dropDown {
         from { opacity:0; transform: translate(-50%, -20px); }
@@ -491,8 +513,12 @@ body{
 
     /* HERO START */
     .hero-section h1{
-        font-size: 50px;
+        font-size: 40px;
         top: -20%;
+    }
+
+    .hero-section p{
+        font-size: 20px !important;
     }
 
     .gear{
@@ -503,7 +529,7 @@ body{
     .left-cloud{
         width: 90vw;
         left: -30%;
-        top: 40%;
+        top: 70%;
     }
 
     .right-cloud{
@@ -516,7 +542,7 @@ body{
 
     .birdie{
         height: 60vw;
-        top: 45%;
+        top: 65%;
     }
     /* HERO END */
 

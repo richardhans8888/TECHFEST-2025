@@ -8,6 +8,7 @@
 
 .find-project, .search-project-container {
   text-align: center;
+  user-select: none;
 }
 
 .find-project {
@@ -27,15 +28,16 @@
   padding: 0px 5px 0px 5px;
   text-align: center;
   background-color: #EFE8D9;
-  color: #6A3231;
+  color: #b18787;
   margin-bottom: 100px;
 }
 
 .search-project::placeholder {
   text-align: center;
   font-size: 20px;
-  font-family: "Cinzel", sans-serif;
-  color: #6A3231;
+  font-family: 'Glyphic', sans-serif;
+  font-weight: 100;
+  color: #634544;
 }
 
 .search-project:focus::placeholder {
