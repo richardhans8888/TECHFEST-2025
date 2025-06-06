@@ -30,6 +30,26 @@
     border: 2px solid #442925;
 }
 
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+.radio-option .toggle-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.radio-option .toggle-btn.active {
+    background-color: #BF8D68;
+    color: white;
+}
+
 .toggle-buttons {
     display: flex;
     gap: 10px;
@@ -40,15 +60,9 @@
 .toggle-btn {
     padding: 8px 20px;
     border: none;
-    border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
     transition: all 0.3s ease;
-}
-
-.toggle-btn.active {
-    background: #BF8D68;
-    color: white;
 }
 
 .toggle-btn:not(.active) {
@@ -125,7 +139,7 @@
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin: auto;
+    margin: 50px auto 0 auto;
 }
 
 .submit-btn:hover {
