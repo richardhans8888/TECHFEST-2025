@@ -33,9 +33,12 @@
 
 .description-container {
   background-color: #D1B272;
-  padding: 10px;
+  padding: 20px;
   opacity: 90%;
-  margin-bottom: 150px;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 10px;
+  margin: 0 auto 150px auto;
   position: relative;
 }
 
@@ -65,4 +68,13 @@
   position: absolute;
   right: 0px;
   top: 0px;
+}
+
+@media (max-width: 768px) {
+  .competition-flower {
+    display: none;
+  }
+  .container-text {
+    margin-right: 0;
+  }
 }

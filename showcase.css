@@ -14,6 +14,7 @@
   font-family: "Cinzel-Deco";
   color: #F7B536;
   font-size: 50px;
+  margin-bottom: 50px;
 }
 
 .search-project {
@@ -74,4 +75,18 @@
   margin-top: 100px;
   width: 70px;
   margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .project-logo {
+    width: 100px;
+  }
+  .project-text{
+    width: 100%;
+  }
+  .project-description {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
