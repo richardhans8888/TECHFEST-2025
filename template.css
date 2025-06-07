@@ -457,6 +457,7 @@ body{
     .spinning-cogs {
         transform:scale(0.4);
         top: 50px;
+        left: -220px;
     }
 
     

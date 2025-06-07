@@ -92,3 +92,10 @@
     padding: 0;
   }
 }
+
+@media (max-width: 430px) {
+  .project-description {
+    width: 170%;
+    margin-top: 40px;
+  }
+}
