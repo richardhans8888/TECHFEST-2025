@@ -16,6 +16,8 @@
   color: #F7B536;
   font-size: 50px;
   margin-bottom: 50px;
+  text-shadow: 0 1px 5px black;
+
 }
 
 .search-project {

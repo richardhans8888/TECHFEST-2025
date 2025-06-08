@@ -7,28 +7,38 @@
 }
 
 .hero-section button {
-  position: relative;
-  font-family: 'Glyphic', sans-serif;
-  font-size: 20px;
-  padding: 10px 30px;
-  background: linear-gradient(to right, #B98D50, #8D435A);
-  border-radius: 20px;
-  cursor: pointer;
-  border: none;
-  z-index: 0;
-  overflow: hidden;
+    position: relative;
+    font-family: 'Glyphic', sans-serif;
+    font-size: 20px;
+    padding: 10px 30px;
+    background: linear-gradient(to right, #B98D50, #8D435A);
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.2s ease-out;
 }
 
 .hero-section button::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  right: 2px;
-  bottom: 2px;
-  background-color: #F7B536; /* Inner background */
-  border-radius: 18px; /* Slightly smaller to match curve */
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: #F7B536; /* Inner background */
+    border-radius: 18px; /* Slightly smaller to match curve */
+    z-index: -1;
+}
+
+.hero-section button:hover{
+  transform: scale(1.1);  
+  background: linear-gradient(to right, #F7B536, #B98D50);
+}
+
+.hero-section button:hover::before {
+    background-color: #ffbf49; /* Inner background */
 }
 
 
