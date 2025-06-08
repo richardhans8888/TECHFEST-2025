@@ -15,16 +15,10 @@ body{
 /* ABOUT SECTION START */
     /* elemen start*/
     .left-gear{
-        position: absolute;
-        width: 40vw;
-        left: -15%;
-        bottom: 42%
+        bottom: 42%;
     }
 
     .right-gear{
-        position: absolute;
-        width: 40vw;
-        right: -15%;
         top: 50%;
     }
     /* elemen stop*/
@@ -100,15 +94,30 @@ body{
 /* SPONSOR MEDIA START */
     /* elemen start*/
     .airship{
-        width: 35vw;
-        position: absolute;
-        left: -10%;
         top: -10%;
+    }
+
+    .left-cloud-sponsor{
+    position: absolute;
+    width: 50vw;
+    left: -15%;
+    top: 60%;
+    animation: floatLeft 8s ease-in-out infinite;
+    }
+
+    .right-cloud-sponsor{
+        position: absolute;
+        width: 50vw;
+        height: auto;
+        top: 30%;
+        left: 65%;
+        animation: floatRight 10s ease-in-out infinite;
     }
     /* elemen stop*/
 
     .bigsponsor{
         position: relative;
+        /* overflow-x: hidden; */
     }
 
     .sponsor-media{
@@ -142,6 +151,8 @@ body{
         height: 50vw;
         border-radius: 20px;
         border: 2px solid #F7B536;
+        z-index: 100;
+
     }
 /* SPONSOR MEDIA END */
 
@@ -264,13 +275,11 @@ body{
     /* ABOUT START */
     /* elemen start*/
         .left-gear{
-            width: 80vw;
             bottom: 65%;
             left: -25%;
         }
 
         .right-gear{
-            width: 80vw;
             top: 40%;
             right: -20%;
         }
@@ -309,6 +318,14 @@ body{
 
     /* SPONSOR MEDIA START */
     /* elemen start */
+    .right-cloud-sponsor{
+        width: 80vw;
+    }
+
+    .left-cloud-sponsor{
+        width: 80vw;
+    }
+
     .airship{
             left: -30%;
             width: 70vw;

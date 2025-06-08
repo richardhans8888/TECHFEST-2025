@@ -236,7 +236,40 @@ body{
 
 /* FOOTER END */
 
+/* elements */
+.left-gear{
+    position: absolute;
+    width: 40vw;
+    left: -15%;
+    animation: float 8s ease-in-out infinite;
+}
 
+.right-gear{
+    position: absolute;
+    width: 40vw;
+    right: -15%;
+    animation: float 8s ease-in-out infinite;
+}
+
+.airship{
+        width: 35vw;
+        position: absolute;
+        left: -10%;
+        animation: float 8s ease-in-out infinite;
+        z-index: -1;
+}
+
+@keyframes float {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
 
 /* HERO START */
 .hero-section{
@@ -387,6 +420,7 @@ body{
 
 /* SPONSOR MEDIA START */
     .sponsor-media{
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -511,6 +545,17 @@ body{
         font-size: 12px;
     }
     /* FOOTER END */
+
+    /* elements */
+    .left-gear, .right-gear{
+        width: 80vw;
+    }
+
+    .airship{
+        left: -25% !important;
+        width: 70vw !important;
+        z-index: -1;
+    }
 
     /* HERO START */
     .hero-section h1{

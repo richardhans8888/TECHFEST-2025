@@ -41,6 +41,13 @@
     background-color: #ffbf49; /* Inner background */
 }
 
+.left-gear{
+  bottom: 20%;
+}
+    
+.right-gear{
+  bottom: 0%;
+}
 
 .about-techtalk {
   position: relative;
@@ -51,12 +58,14 @@
 }
 
 .about-techtalk h2 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cinzel-Deco', serif;
   font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: 0.15em;
   margin-bottom: 2rem;
   color: #f5a623;
+  text-shadow: 0 1px 5px black;
+
 }
 
 .book-container {
@@ -79,20 +88,30 @@
   color: #ffffffcc;
 }
 
+.left-cloud.speaker{
+  top: -40% !important;
+  z-index: -1;
+}
 
+.right-cloud.speaker{
+  top: 30% !important;
+  z-index: -1;
+}
 .speakers-section {
-  padding: 4rem 2rem 2rem;
+  position: relative;
+  padding: 7rem 2rem 2rem;
   text-align: center;
-  
 }
 
 .speakers-section h2 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Cinzel-Deco', serif;
   font-size: 3.8rem;
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.15rem;
   margin-bottom: 2rem;
   color: #f5a623;
+  text-shadow: 0 1px 5px black;
+
 }
 
 .speaker-row {
@@ -157,7 +176,22 @@
   min-height: 300px;
 }
 
+/* elemens */
+.airship{
+  width: 50vw !important;
+  left: -15% !important;
+}
+
 @media (max-width: 768px) {
+  .left-cloud.speaker{
+    top: -10% !important;
+  }
+
+  .right-cloud.speaker{
+    top: 60% !important;
+
+  }
+
   .row1, .row2 {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
