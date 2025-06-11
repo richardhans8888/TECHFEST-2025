@@ -123,8 +123,8 @@
 
   .spinning-cogs.sponsor{
     position: absolute;
-    left: 50% !important;
-    top: 40% !important;
+    left: 55% !important;
+    top: 60% !important;
     width: 80vw !important;
     z-index: -1;
   }
