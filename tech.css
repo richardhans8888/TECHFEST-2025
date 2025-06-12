@@ -115,7 +115,8 @@
 }
 
 .speaker-row {
-  background-color: #D3B56D; 
+  background-color: #C4AD76;
+  box-shadow: 2px 5px 10px black;
   color: #000000;         
   padding: 20px;           
   border-radius: 8px;   
@@ -216,9 +217,9 @@
 
 .info-box {
   width: 100%;
-  background-color: #D3B56D;
+  background-color: #C4AD76;
+  box-shadow: 2px 5px 10px black;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 24px 20px;
   position: relative;       
   color: #2A3A46;         

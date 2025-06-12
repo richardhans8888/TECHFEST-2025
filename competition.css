@@ -42,7 +42,8 @@
 }
 
 .description-container {
-  background-color: #D1B272;
+  background-color: #C4AD76;
+  box-shadow: 2px 5px 10px black;
   padding: 20px;
   opacity: 90%;
   width: 90%;

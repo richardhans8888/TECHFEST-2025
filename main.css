@@ -110,9 +110,10 @@
   flex-direction: row;
   gap: 1rem;
   background-color: #C4AD76;
+  box-shadow: 2px 5px 10px black;
   margin: 2rem 0;
   text-align: left;
-  box-shadow: 2px 5px 10px black;
+
 }
 
 .competition-container img{
