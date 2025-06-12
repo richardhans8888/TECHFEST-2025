@@ -390,6 +390,7 @@ body{
 
 
 .left-cloud{
+    z-index: -100;
     position: absolute;
     width: 50vw;
     left: -15%;
@@ -398,6 +399,7 @@ body{
 }
 
 .right-cloud{
+    z-index: -1;
     position: absolute;
     width: 50vw;
     height: auto;

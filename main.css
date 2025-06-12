@@ -32,7 +32,7 @@
 }
 
 .bigtechtalk{
-  z-index: -1;
+  z-index: 100;
   position: relative;
   padding: 10rem 15rem;
   display: flex;
@@ -43,9 +43,10 @@
 }
 
 .techtalk-container{
+  z-index: 100;
   position: absolute;
-  padding: 10rem;
-  transform: translateY(15rem);
+  padding: 0 10rem;
+  transform: translateY(5rem);
 }
 
 .techtalk-container h1{
@@ -53,12 +54,84 @@
     font-size: 60px;
     text-shadow: 0 1px 5px black;
     margin-bottom: 10px;
+    z-index: 100;
 }
 
 .techtalk-container p{
   font-family: "Glyphic", sans-serif;
   size: 20px;
-  text-shadow: 0.5px 0.5px 0.5px #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+.bigcompetition{
+  position: relative;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+.right-cloud.compe-right-cloud{
+  top: -20% !important;
+}
+
+.airship{
+  top: -20%;
+}
+
+.competition-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem;
+  text-align: center;
+  /* gap: 1rem; */
+}
+
+.competition-section h1, p{
+  color: #F7B536;
+}
+
+.competition-section h1{
+  font-family: "Cinzel-Deco", sans-serif;
+  font-size: 60px;
+  text-shadow: 0 1px 5px black;
+}
+
+.competition-section p{
+  font-family: "Glyphic", sans-serif;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.competition-container{
+  border-radius: 20px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: #C4AD76;
+  margin: 2rem 0;
+  text-align: left;
+  box-shadow: 2px 5px 10px black;
+}
+
+.competition-container img{
+  width: 10vw;
+  height: 10vw;
+}
+
+.competition-container h2{
+  font-family: "Cinzel-Deco";
+}
+
+.competition-container p{
+  color: black;
+  text-shadow: none;
+}
+
+.compe-right-section{
+  border-left: 1px solid black;
+  padding-left: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -76,6 +149,45 @@
   .techtalk-container{
   position: absolute;
   padding: 5rem;
-  transform: translateY(15rem);
+  transform: translateY(5rem);
   }
+
+  .techtalk-container h1{
+    font-size: 40px;
+  }
+
+  .large-cog.right-cog-1{
+  position: absolute;
+  width: 30vw ;
+  left: 40px !important;
+  top: -20px;
+}
+
+  .small-cog.right-cog-2{
+    left: 100px;
+    width: 20vw;
+    top: -60px;
+  }
+
+  .small-cog.right-cog-3{
+    top: 30px;
+    left: -5px;
+    z-index: -1;
+    width: 20vw !important;
+  }
+
+  .competition-section{
+    margin-top: 10rem;
+    padding: 3rem;
+    
+  }
+
+  .competition-section h1{
+    font-size: 40px;
+  }
+
+  .airship{
+    top: 20%;
+  }
+  
 }
