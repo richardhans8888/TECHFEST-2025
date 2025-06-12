@@ -81,6 +81,16 @@
   margin-bottom: 60px;
 }
 
+.gear-showcase {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+.balloon-showcase {
+  position: absolute;
+  z-index: -1;
+}
+
 @media (max-width: 768px) {
   .project-logo {
     width: 100px;
