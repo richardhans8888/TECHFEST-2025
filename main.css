@@ -2,21 +2,80 @@
   position: relative;
   top: 350px !important;
   left: 65% !important;
-  opacity: 1;
+  opacity: 0.9;
+  /* filter: drop-shadow(0 1px 1px black); */
 }
 
-.right-cog-1{
+.large-cog.right-cog-1{
   position: absolute;
-  /* opacity: 0.8; */
-
+  /* top: 60px !important; */
+  width: 25vw ;
 }
 
-.right-cog-2{
+.small-cog.right-cog-2{
   left: 330px;
+  width: 20vw;
+  top: -40px;
 }
 
-.right-cog-3{
-  top: 220px;
-  left: 60px;
+.small-cog.right-cog-3{
+  top: 200px;
+  left: 100px;
   z-index: -1;
+  width: 20vw !important;
+}
+
+/* techtalk menu */
+.birdie{
+  position: absolute;
+  top: 0% !important;
+}
+
+.bigtechtalk{
+  z-index: -1;
+  position: relative;
+  padding: 10rem 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #F7B536;
+}
+
+.techtalk-container{
+  position: absolute;
+  padding: 10rem;
+  transform: translateY(15rem);
+}
+
+.techtalk-container h1{
+    font-family: "Cinzel-Deco", sans-serif;
+    font-size: 60px;
+    text-shadow: 0 1px 5px black;
+    margin-bottom: 10px;
+}
+
+.techtalk-container p{
+  font-family: "Glyphic", sans-serif;
+  size: 20px;
+  text-shadow: 0.5px 0.5px 0.5px #000000;
+}
+
+@media (max-width: 768px) {
+  .bigtechtalk{
+    z-index: -1;
+    position: relative;
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F7B536;
+  }
+
+  .techtalk-container{
+  position: absolute;
+  padding: 5rem;
+  transform: translateY(15rem);
+  }
 }
