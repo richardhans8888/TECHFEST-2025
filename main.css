@@ -1,3 +1,22 @@
 .spinning-cogs-2{
-  right: 0% !important;
+  position: relative;
+  top: 350px !important;
+  left: 65% !important;
+  opacity: 1;
+}
+
+.right-cog-1{
+  position: absolute;
+  /* opacity: 0.8; */
+
+}
+
+.right-cog-2{
+  left: 330px;
+}
+
+.right-cog-3{
+  top: 220px;
+  left: 60px;
+  z-index: -1;
 }
