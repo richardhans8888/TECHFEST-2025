@@ -134,6 +134,131 @@
   padding-left: 1rem;
 }
 
+.bigtimeline{
+  position: relative;
+}
+
+.clockies{
+  position: absolute;
+  width: 30vw;
+  right: 0%;
+  top: -7rem;
+  animation: clocked 8s infinite;
+}
+
+@keyframes clocked {
+    0% {
+        transform: rotate(-30deg);
+    }
+    /* 25% {
+        transform: rotate(30deg);
+      } */
+    50% { 
+        transform: rotate(30deg);
+    }
+    /* 75%{
+        transform: rotate(-30deg);
+    } */
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+.left-gear{
+  top: 25%;
+  left: -5% !important;
+}
+
+.right-gear{
+  top: 70%;
+}
+
+.timelinesection{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.timelinesection h1{
+  font-family: "Cinzel-Deco", sans-serif;
+  font-size: 60px;
+  text-shadow: 0 1px 5px black;
+  color: #F7B536;
+}
+
+.timeline-container {
+  position: relative;
+  width: 300px;
+  margin: 0 auto 5rem auto;
+  height: 1000px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #f5a623;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+
+.timeline-points {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.point {
+  width: 16px;
+  height: 16px;
+  background-color: #f5a623;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #f5a623aa;
+  margin-left: -6px; 
+}
+
+
+.timeline-branches {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.branch {
+  position: absolute;
+  height: 4px;
+  background-color: #f5a623;
+  box-shadow: 0 0 8px #f5a623aa;
+  border-radius: 2px;
+}
+
+.bigsponsor{
+  position: relative;
+}
+
+.birdie{
+    opacity: 0.8;
+    position: absolute;
+    height: 40vw;
+    top: 35% !important;
+    right: -5%;
+}
+
 @media (max-width: 768px) {
   .bigtechtalk{
     z-index: -1;
@@ -190,4 +315,8 @@
     top: 20%;
   }
   
+.timelinesection h1{
+  font-size: 40px;
+}
+
 }
