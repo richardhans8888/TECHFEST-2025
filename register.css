@@ -50,3 +50,131 @@
     transition: left 0.5s;
 }
 
+.form-container {
+    background: linear-gradient(180deg, rgba(253, 209, 124, 1.0) 0%, rgba(247, 181, 54, 1.0) 100%);
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    max-width: 900px;
+    position: relative;
+    z-index: 10;
+    border: 2px solid #442925;
+}
+
+.radio-option input[type="radio"] {
+    display: none;
+}
+
+.radio-option .toggle-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.radio-option .toggle-btn.active {
+    background-color: #BF8D68;
+    color: white;
+}
+
+.toggle-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.toggle-btn {
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:not(.active) {
+    background: #e8e8e8;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #8b4513;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.radio-option input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.radio-option label {
+    margin: 0;
+    cursor: pointer;
+    color: #8b4513;
+    font-weight: bold;
+}
+
+.submit-btn {
+    display: block;
+    width: 50%;
+    padding: 12px;
+    background: #BF8D68;;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 50px auto 0 auto;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
