@@ -122,6 +122,7 @@
 }
 
 .competition-container h2{
+  color: #6A3231;
   font-family: "Cinzel-Deco";
 }
 
@@ -174,78 +175,176 @@
   top: 70%;
 }
 
-.timelinesection{
+.timelinesection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
-  gap: 1rem;
+  gap: 3rem;
+  padding: 2rem;
 }
 
-.timelinesection h1{
-  font-family: "Cinzel-Deco", sans-serif;
+.timelinesection h1 {
+  font-family: "Cinzel-Deco", serif;
   font-size: 60px;
-  text-shadow: 0 1px 5px black;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   color: #F7B536;
+  margin: 0;
 }
 
+/* Main timeline container */
 .timeline-container {
   position: relative;
-  width: 300px;
-  margin: 0 auto 5rem auto;
-  height: 1000px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
 
-.timeline-line {
+/* Central vertical line */
+.timeline-container::before {
+  content: '';
   position: absolute;
   left: 50%;
   top: 0;
+  bottom: 0;
   width: 4px;
-  height: 100%;
-  background-color: #f5a623;
+  background: linear-gradient(180deg, #f5a623, #F7B536);
   transform: translateX(-50%);
-  border-radius: 2px;
+  z-index: 1;
 }
 
-
-.timeline-points {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 4px;
-  height: 100%;
-  transform: translateX(-50%);
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  margin: 3rem 0;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
-.point {
-  width: 16px;
-  height: 16px;
-  background-color: #f5a623;
-  border-radius: 50%;
-  box-shadow: 0 0 8px #f5a623aa;
-  margin-left: -6px; 
-}
-
-
-.timeline-branches {
+/* Timeline dot */
+.timeline-dot {
   position: absolute;
   left: 50%;
-  top: 0;
-  width: 100%;
-  height: 100%;
   transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: #F7B536;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
-.branch {
-  position: absolute;
-  height: 4px;
-  background-color: #f5a623;
-  box-shadow: 0 0 8px #f5a623aa;
-  border-radius: 2px;
+/* Timeline content */
+.timeline-content {
+  position: relative;
+  background: linear-gradient(135deg, #C4AD76, #D4B886);
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  width: 40%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(247, 181, 54, 0.3);
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-content h2 {
+  color: #6A3231;
+  font-family: "Cinzel-Deco", serif;
+  font-size: 18px;
+  margin: 0 0 0.5rem 0;
+}
+
+.timeline-content p {
+  color: #2c1810;
+  font-family: "Glyphic", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Left side items (odd) */
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-right: auto;
+  margin-left: 0;
+  text-align: right;
+  margin-right: 55%;
+}
+
+/* Right side items (even) */
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: left;
+  margin-left: 55%;
+}
+
+/* Responsive design */
+@media (max-width: 1170px) {
+  .timelinesection h1 {
+    font-size: 40px;
+  }
+  
+  .timeline-container {
+    max-width: none;
+    padding: 2rem 1rem;
+  }
+  
+  .timeline-container::before {
+    left: 30px;
+  }
+  
+  .timeline-dot {
+    left: 0;
+    transform: none;
+  }
+  
+  .timeline-content {
+    width: 100%;
+    margin-left: 70px !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+  }
+  
+  .timeline-content::before {
+    left: -15px !important;
+    right: auto !important;
+    top: 30px !important;
+    transform: none !important;
+    border-color: transparent !important;
+    border-right-color: #C4AD76 !important;
+    border-left-color: transparent !important;
+  }
+  
+  .timeline-item::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .timelinesection {
+    padding: 1rem;
+  }
+  
+  .timeline-content {
+    padding: 1rem;
+    margin-left: 60px !important;
+  }
+  
+  .timeline-content h2 {
+    font-size: 16px;
+  }
+  
+  .timeline-content p {
+    font-size: 12px;
+  }
 }
 
 .bigsponsor{
