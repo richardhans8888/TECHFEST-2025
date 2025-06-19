@@ -124,13 +124,11 @@
 .competition-container h2{
 <<<<<<< HEAD
   /* font-family: "Cinzel-Deco"; */
-  font-family: "Cinzel", sans-serif;
+  font-family: "Cinzel-Deco", sans-serif;
   font-weight: 100;
   font-size: 28px;
   color: #6A3231;
 =======
-  color: #6A3231;
-  font-family: "Cinzel-Deco";
 >>>>>>> 7ba059c456d65fae70b85b248a5b5dee9b8e1272
 }
 
