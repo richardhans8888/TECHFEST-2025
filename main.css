@@ -122,12 +122,20 @@
 }
 
 .competition-container h2{
-  font-family: "Cinzel-Deco";
+  /* font-family: "Cinzel-Deco"; */
+  font-family: "Cinzel", sans-serif;
+  font-weight: 100;
+  font-size: 28px;
+  color: #6A3231;
 }
 
 .competition-container p{
-  color: black;
+  /* color: black; */
   text-shadow: none;
+  font-family: "Glyphic", sans-serif;
+        font-weight: 100;
+        font-size: 15px;
+        color: #6A3231;
 }
 
 .compe-right-section{

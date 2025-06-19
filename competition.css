@@ -45,7 +45,6 @@
   background-color: #C4AD76;
   box-shadow: 2px 5px 10px black;
   padding: 20px;
-  opacity: 90%;
   width: 90%;
   max-width: 1200px;
   border-radius: 10px;
@@ -58,12 +57,19 @@
 }
 
 .description-header {
-  font-size: 60px;
+  font-family: "Cinzel", sans-serif;
+  font-weight: 100;
+  font-size: 28px;
+  color: #6A3231;
 }
 
 .description-body {
   margin: 20px 0px 20px 0px;
-  min-height: 380px;
+  min-height: 100px;
+  font-family: "Glyphic", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #6A3231;
 }
 
 .container-body {
@@ -113,6 +119,7 @@
   position: absolute;
   right: 0px;
   top: 0px;
+  width: 15vw;
 }
 
 @media (max-width: 768px) {
