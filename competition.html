@@ -62,7 +62,7 @@
               Craft interfaces that captivate. Compete by designing innovative digital experiences under this year's theme: MAGIC.
               Create with intention. Design with impact.
             </p>
-            <button class="upload-btn" onclick="openUploadModal('uiux')">Upload Submission</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScUGAHOXQPbm9uSG63gfQ1RfCLOznWHocBaPTs9TKbtjtI6gQ/viewform" target="_blank"><button class="upload-submit-btn">Submit</button></a>
           </div>
           <img src="Assets/Pics/CompetitionDescriptionFlower.svg" class="competition-flower">
         </div>
@@ -77,83 +77,11 @@
             <p class="description-text-color description-body">
               Analyze, interpret, and discover powerful insights from data. This competition challenges your analytical thinking to solve real-world issues with data-driven solutions.
             </p>
-            <button class="upload-btn" onclick="openUploadModal('data')">Upload Submission</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFP988K0y6JYksOZ9xK6cJ261eL_gMtygoXFP90wFLxb5aYg/viewform" target="_blank"><button class="upload-submit-btn">Submit</button></a>
           </div>
           <img src="Assets/Pics/CompetitionDescriptionFlower.svg" class="competition-flower">
         </div>
       </section>
-    </div>
-
-    <!-- Upload Modal for UI/UX Competition -->
-    <div id="uploadModal-uiux" class="upload-modal">
-      <div class="upload-modal-content">
-        <div class="upload-modal-header">
-          <h2>Submit UI/UX Design Link</h2>
-          <span class="close-modal" onclick="closeUploadModal('uiux')">&times;</span>
-        </div>
-        <div class="upload-modal-body">
-          <p>Please provide your group name and a link to the zip file download. The group name is required so we know which submission belongs to which group.</p>
-          <div class="link-input-area">
-            <input
-              type="text"
-              id="groupNameInput-uiux"
-              placeholder="Group Name"
-              class="link-input"
-              autocomplete="off"
-              required
-              style="margin-bottom: 16px;"
-            >
-            <input
-              type="url"
-              id="linkInput-uiux"
-              placeholder="https://your-submission-link.com"
-              class="link-input"
-              autocomplete="off"
-              required
-            >
-          </div>
-          <div class="upload-actions">
-            <button class="upload-submit-btn" onclick="submitLink('uiux')" disabled>Submit</button>
-            <button class="upload-cancel-btn" onclick="closeUploadModal('uiux')">Cancel</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Upload Modal for data analytics Competition -->
-    <div id="uploadModal-data" class="upload-modal">
-      <div class="upload-modal-content">
-        <div class="upload-modal-header">
-          <h2>Submit Data Analytics Link</h2>
-          <span class="close-modal" onclick="closeUploadModal('data')">&times;</span>
-        </div>
-        <div class="upload-modal-body">
-          <p>Please provide your group name and a link to the zip file download. The group name is required so we know which submission belongs to which group.</p>
-          <div class="link-input-area">
-            <input
-              type="text"
-              id="groupNameInput-data"
-              placeholder="Group Name"
-              class="link-input"
-              autocomplete="off"
-              required
-              style="margin-bottom: 16px;"
-            >
-            <input
-              type="url"
-              id="linkInput-data"
-              placeholder="https://your-submission-link.com"
-              class="link-input"
-              autocomplete="off"
-              required
-            >
-          </div>
-          <div class="upload-actions">
-            <button class="upload-submit-btn" onclick="submitLink('data')" disabled>Submit</button>
-            <button class="upload-cancel-btn" onclick="closeUploadModal('data')">Cancel</button>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- sponsor & media partner -->
