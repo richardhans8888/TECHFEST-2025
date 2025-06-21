@@ -81,6 +81,198 @@
   margin-right: 300px;
 }
 
+.upload-btn {
+  position: relative;
+  font-family: 'Glyphic', sans-serif;
+  font-size: 16px;
+  padding: 12px 25px;
+  background: linear-gradient(to right, #8D435A, #6A3231);
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+  z-index: 0;
+  overflow: hidden;
+  transition: 0.3s ease-out;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.upload-btn::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #F7B536;
+  border-radius: 13px;
+  z-index: -1;
+  transition: 0.3s ease-out;
+}
+
+.upload-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.upload-btn:hover::before {
+  background-color: #ffbf49;
+}
+
+.upload-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.upload-modal-content {
+  background: linear-gradient(135deg, #C4AD76 0%, #B98D50 100%);
+  margin: 5% auto;
+  padding: 0;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  animation: modalSlideIn 0.3s ease-out;
+  border: 2px solid #6A3231;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.upload-modal-header {
+  background: linear-gradient(to right, #8D435A, #6A3231);
+  color: white;
+  padding: 20px;
+  border-radius: 13px 13px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload-modal-header h2 {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 20px;
+  margin: 0;
+  color: #F7B536;
+}
+
+.close-modal {
+  color: #F7B536;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.close-modal:hover {
+  color: #ffbf49;
+  transform: scale(1.1);
+}
+
+.upload-modal-body {
+  padding: 25px;
+}
+
+.upload-modal-body p {
+  font-family: 'Glyphic', sans-serif;
+  color: #6A3231;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Link Input Styles */
+.link-input-area {
+  margin-bottom: 20px;
+}
+
+.link-input {
+  width: 100%;
+  padding: 15px;
+  border: 3px solid #8D435A;
+  border-radius: 10px;
+  font-family: 'Glyphic', sans-serif;
+  font-size: 14px;
+  color: #6A3231;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
+
+.link-input:focus {
+  outline: none;
+  border-color: #F7B536;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(247, 181, 54, 0.3);
+}
+
+.link-input::placeholder {
+  color: #8D435A;
+  opacity: 0.7;
+}
+
+.upload-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.upload-submit-btn, .upload-cancel-btn {
+  font-family: 'Glyphic', sans-serif;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+  min-width: 120px;
+}
+
+.upload-submit-btn {
+  background: linear-gradient(to right, #8D435A, #6A3231);
+  color: white;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.upload-submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.upload-submit-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.upload-cancel-btn {
+  background: rgba(106, 50, 49, 0.1);
+  color: #6A3231;
+  border: 2px solid #8D435A;
+}
+
+.upload-cancel-btn:hover {
+  background: rgba(141, 67, 90, 0.2);
+  transform: translateY(-2px);
+}
+
 .left-gear{
   top: 20%;
 }
@@ -140,5 +332,20 @@
 
   .left-gear.sponsor{
     display: none;
+  }
+
+  .upload-modal-content {
+    width: 95%;
+    margin: 10% auto;
+  }
+
+  .upload-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .upload-submit-btn, .upload-cancel-btn {
+    width: 100%;
+    max-width: 200px;
   }
 }
