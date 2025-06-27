@@ -273,6 +273,14 @@
   transform: translateY(-2px);
 }
 
+.final-btn {
+  display: none;
+}
+
+.da-btn-container {
+  display: flex;
+}
+
 .left-gear{
   top: 20%;
 }
