@@ -57,3 +57,34 @@ faqQuestions.forEach(question => {
         }
     });
 });
+
+// Data analytics button for final submission
+var countDownDateShow = new Date("Jul 14, 2025 00:00:00").getTime();
+var x = setInterval(countDownShow, 1000)
+function countDownShow() {
+    var now = new Date().getTime()
+    var duration = countDownDateShow - now;
+
+    if (duration < 0) {
+        var button = document.getElementsByClassName("final-btn");
+        for (var i = 0; i < button.length; i++) {
+            button[i].style.display = "inline-block";
+        }
+        clearInterval(x);
+    }
+}
+
+var countDownDateHide = new Date("Jul 18, 2025 23:59:59").getTime();
+var y = setInterval(countDownHide, 1000)
+function countDownHide() {
+    var now = new Date().getTime()
+    var duration = countDownDateHide - now;
+
+    if (duration < 0) {
+        var button = document.getElementsByClassName("da-btn-f");
+        for (var i = 0; i < button.length; i++) {
+            button[i].remove();
+        }
+        clearInterval(y);
+    }
+}

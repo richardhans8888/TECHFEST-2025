@@ -273,6 +273,18 @@
   transform: translateY(-2px);
 }
 
+.final-btn {
+  display: none;
+}
+
+.da-btn-container {
+  display: flex;
+}
+
+.da-btn-f {
+  margin-left: 15px;
+}
+
 .left-gear{
   top: 20%;
 }
