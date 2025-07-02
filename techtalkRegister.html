@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>Register</title>
     <link rel="stylesheet" href="template.css" />
     <link rel="stylesheet" href="register.css" />
@@ -105,6 +105,16 @@
                     </select>
                 </div>
 
+                <div class="form-group" id="region-group">
+                    <label for="region">Session</label>
+                    <select id="region" name="entry.1576741084">
+                        <option value="" selected disabled>Pilih Session</option>
+                        <option value="Session 1">Session 1</option>
+                        <option value="Session 2">Session 2</option>
+                        <option value="Session 1 & 2">Session 1 & 2</option>
+                    </select>
+                </div>
+
                 <div class="toggle-buttons">
                     <div class="radio-option">
                         <input type="radio" id="online" name="entry.838321128" value="Online" checked>
@@ -122,33 +132,33 @@
             <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
         </div>
 
-    <!-- footer -->
-    <div class="bigfoot">
-        <img class="mountain" src="/Assets/Pics/mountain1.svg" alt="">
-        <div class="footer">
-            <div class="footer-left">
-                <img src="/Assets/Pics/LogoTechfest.png" alt="">
-                <h3>@2025 TECHFEST - HIMTI BINUS</h3>
-            </div>
-            <div class="footer-right">
-                <div class="top-footer">
-                    <img class="binus-icon" src="/Assets/Pics/BINUS University White 1 1.svg" alt="">
-                    <img class="himti-icon" src="/Assets/Pics/logo himti 1.svg" alt="">
+        <!-- footer -->
+        <div class="bigfoot">
+            <img class="mountain" src="/Assets/Pics/mountain1.svg" alt="">
+            <div class="footer">
+                <div class="footer-left">
+                    <img src="/Assets/Pics/LogoTechfest.png" alt="">
+                    <h3>@2025 TECHFEST - HIMTI BINUS</h3>
                 </div>
-                <div class="bottom-footer">
-                    <div class="footer-link">
-                        <a href="/faq.html">FAQ</a>
-                        <a href="/aboutus.html">ABOUT</a>
+                <div class="footer-right">
+                    <div class="top-footer">
+                        <img class="binus-icon" src="/Assets/Pics/BINUS University White 1 1.svg" alt="">
+                        <img class="himti-icon" src="/Assets/Pics/logo himti 1.svg" alt="">
                     </div>
-                    <div class="footer-icon">
-                        <a class="media-icon" target="_blank" href=""><img src="/Assets/Pics/LINE.svg" alt=""></a>
-                        <a class="media-icon" target="_blank" href="https://www.instagram.com/techfest.himti?igsh=cGtxb2dhbzF4ZDBv"><img src="/Assets/Pics/Instagram.svg" alt=""></a>
+                    <div class="bottom-footer">
+                        <div class="footer-link">
+                            <a href="/faq.html">FAQ</a>
+                            <a href="/aboutus.html">ABOUT</a>
+                        </div>
+                        <div class="footer-icon">
+                            <a class="media-icon" target="_blank" href="https://line.me/ti/p/GRLVw5EqK6"><img src="/Assets/Pics/LINE.svg" alt=""></a>
+                            <a class="media-icon" target="_blank" href="https://www.instagram.com/techfest.himti?igsh=cGtxb2dhbzF4ZDBv"><img src="/Assets/Pics/Instagram.svg" alt=""></a>
+                        </div>
+                        
                     </div>
-                    
                 </div>
             </div>
         </div>
-    </div>
 
     <style>
         .form-message {
