@@ -12,7 +12,8 @@
 .register-button {
     background: linear-gradient(135deg, #FDD17C 0%, #F7B536 100%);
     border: 2px solid #442925;
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     text-align: center;
     margin: auto;
     border-radius: 12px;
